@@ -13,25 +13,30 @@ tabButtons.forEach(btn => {
     });
 });
 
-/* Simple Carousel */
-const images = [
-    'assets/images/TLP/ref8TLP.png',
-    'assets/images/TLP/ref9TLP.png',
-    'assets/images/TLP/ref10TLP.png',
-    'assets/images/TLP/ref11TLP.png',
-    'assets/images/TLP/ref12TLP.png',
-    'assets/images/TLP/ref13TLP.png',
-    'assets/images/TLP/ref14TLP.png',
-    'assets/images/TLP/ref15TLP.png'
-];
-let currentIndex = 0;
-const carouselImage = document.getElementById('carousel-image');
-function showImage(index) {
-    currentIndex = (index + images.length) % images.length;
-    carouselImage.src = images[currentIndex];
-}
-function nextImage() { showImage(currentIndex + 1); }
-function prevImage() { showImage(currentIndex - 1); }
+/* ----- Dynamic Carousel ----- */
+document.querySelectorAll('.carousel').forEach(carousel => {
+    const images = carousel.querySelectorAll('.carousel-images img');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        currentIndex = (index + images.length) % images.length; // wrap first
+        images.forEach((img, i) => {
+            img.style.display = i === currentIndex ? 'block' : 'none';
+        });
+    }
+
+    carousel.querySelector('.next-btn').addEventListener('click', () => {
+        showImage(currentIndex + 1);
+    });
+
+    carousel.querySelector('.prev-btn').addEventListener('click', () => {
+        showImage(currentIndex - 1);
+    });
+
+    // Initialize
+    showImage(0);
+});
+
 
 /* Lightbox */
 const lightbox = document.getElementById('lightbox');

@@ -1,211 +1,185 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>The Last Page - Project</title>
+    <title>Necrobotics - Project</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/project1.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    
 </head>
 <body class="left-sidebar is-preload">
-    <div id="page-wrapper">
+<div id="page-wrapper">
 
-        <!-- Header -->
-        <header id="header">
-            <h1 id="logo"><a href="index.html">Luan Ta <span>- Level Design Portfolio</span></a></h1>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="submenu">
-                        <a href="javascript:void(0)">Projects</a>
-                        <ul>
-                            <li><a href="project1.html">Haunted Harbor</a></li>
-                            <li><a href="project2.html">Sky Ruins</a></li>
-                            <li><a href="project3.html" class="current">The Last Page</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact" class="button primary">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Header -->
+    <header id="header">
+        <h1 id="logo"><a href="../index.html">Luan Ta <span>- Level Design Portfolio</span></a></h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="submenu">
+                    <a href="javascript:void(0)">Projects</a>
+                    <ul>
+                        <li><a href="project1.html">The Last Page</a></li>
+                        <li><a href="project2.html" class="current">Necrobotics</a></li>
+                        <li><a href="project3.html">Haunted Harbor</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact" class="button primary">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <article id="main">
+
+        <header class="special container">
+            <span class="icon solid fa-robot"></span>
+            <h2>Necrobotics</h2>
+            <h1>A deep dive into my level design process for this project.</h1>
         </header>
 
-        <!-- Main -->
-        <article id="main">
+        <section class="wrapper style4 container">
 
-            <header class="special container">
-                <span class="icon solid fa-book"></span>
-                <h2>The Last Page</h2>
-                <h1>
-                    A deep dive into my level design process for this project.
-                </h1>
-            </header>
+            <div class="content">
 
-            <!-- Tabs Navigation -->
-            <div class="tab-nav">
-                <button class="tab-button active" data-tab="tab1">First Level</button>
-                <button class="tab-button" data-tab="tab2">Second Level</button>
-                <button class="tab-button" data-tab="tab3">Gameplay</button>
+                <!-- Overview -->
+                <h3>Project Overview</h3>
+                <p>
+                    For Necrobotics, I served as the Level Designer on an 8-member team. 
+                    My primary responsibility was to <strong>design the world and player exploration flow</strong> for this 
+                    exploration-driven game. The project featured minimal narrative, so I leaned on using environmental 
+                    storytelling and game mechanics to guide players toward the final boss encounter.
+                </p>
+                
+                <img src="assets/images/N/team.png" alt="Necrobotics Team" class="image featured" style="width:50%; height:auto; display:block; margin:0 auto;"/>
+
+                <h3>Design Constraints</h3>
+                <ul class="centered-list">
+                    <li><strong>1</strong> Boss Encounter</li>
+                    <li><strong>4</strong> Player Abilities (1 Core + 3 Secondary)</li>
+                    <li><strong>3</strong> Sub-Sections / Zones</li>
+                    <li><strong>3</strong> Enemy Types</li>
+                    <li>Dedicated Rest Areas for Pacing</li>
+                </ul>
+
+                <!-- Process -->
+                <h3>Design Process</h3>
+                <p>
+                    I began by mapping out player paths to ensure that core abilities were 
+                    introduced in a safe, low-risk environment. To encourage exploration, I implemented 
+                    soft locks that required players to collect abilities naturally before 
+                    reaching the boss room.
+                </p>
+
+                <div class="image-pair">
+                    <img src="assets/images/N/Key.png" alt="Original Layout" />
+                    <img src="assets/images/N/Diagram.jpg" alt="Final Layout" />
+                </div>
+
+                <p>
+                    I began by creating the first draft layout, combining the individual rooms into a cohesive 
+                    flow. My initial focus was on defining entrances and exits to establish how players would 
+                    naturally navigate between spaces. From there, I designed the first few rooms to:
+                    <ol>
+                        <li>Introduce the core controls in a safe, guided environment</li>
+                        <li>Gradually present threats and environmental hazards</li>
+                        <li>Lead players toward the first challenge through clear, linear level design</li>
+                    </ol>
+                </p>
+
+                <img src="assets/images/N/FirstDraft.png" alt="First Draft" class="image featured"/>
+
+                <p> The pictures below are screenshots of the first few rooms with notes showing my intentions with it. </p>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="assets/images/N/ref1N.jpg" alt="Development Screenshot 1" />
+                        <img src="assets/images/N/ref2N.jpg" alt="Development Screenshot 2" />
+                        <img src="assets/images/N/ref3N.jpg" alt="Development Screenshot 3" />
+                        <img src="assets/images/N/ref4N.jpg" alt="Development Screenshot 4" />
+                    </div>
+                    <div>
+                        <button class="prev-btn">Prev</button>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+
+                <h3>Iteration & Modular Design</h3>
+                <p> After playtesting the first few rooms, I moved on to design the rest of the rooms. 
+                    Here was what the original layout looked like:
+                </p>
+
+                <img src="assets/images/N/Original layout.png" alt="Original layout" class="image featured"/>
+                <p> To keep the pacing engaging, I mixed intense sections with quieter moments by clustering 
+                    enemies in specific areas and leaving other spots mostly empty.
+                </p>
+
+                <p>
+                    However, we were falling behind schedule so we decided to scope down the game. Because I designed the world 
+                    with modular rooms and branching paths, I was able to remove rooms without breaking 
+                    progression. This ensured the final layout felt cohesive despite reduced content.
+                </p>
+
+                <div class="image-pair">
+                    <img src="assets/images/N/Original layout.png" alt="Original Layout" />
+                    <img src="assets/images/N/Revised Layout.png" alt="Revised Layout" />
+                </div>
+                <p class="caption">Original blockout (left) vs final scoped layout (right). Below is the final design in Godot.</p>
+                <img src="assets/images/N/FinalDesign.jpg" alt="Final Layout" class="image featured" />
+
+                <!-- Takeaways -->
+                <h3>Design Takeaways</h3>
+                <ul>
+                    <li><strong>Player-Centric Design:</strong> Introduced abilities and hazards naturally without forced tutorials.</li>
+                    <li><strong>Pacing & Flow:</strong> Balanced combat intensity with quiet exploration spaces.</li>
+                    <li><strong>Modular Thinking:</strong> Built rooms to allow scope reduction without breaking progression.</li>
+                    <li><strong>Iterative Workflow:</strong> Applied playtesting feedback to adjust layouts and encounters.</li>
+                    <li><strong>Collaboration:</strong> Gained experience in a Scrum-based, multi-disciplinary team.</li>
+                </ul>
+
+                <p>
+                    Overall, Necrobotics strengthened my ability to 
+                    <strong>design exploration-focused levels</strong>, 
+                    <strong>iterate quickly</strong>, and 
+                    <strong>adapt to production constraints</strong>. I’m eager to apply what I learned in a professional design team.
+                </p>
+
             </div>
+        </section>
+    </article>
 
-            <!-- Content -->
-            <section class="wrapper style4 container">
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="https://github.com/Nanot101" class="icon brands circle fa-github" target="_blank" rel="noopener noreferrer"><span class="label">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/luan-ta-900724190/" class="icon brands circle fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://www.youtube.com/@Looooooooon" class="icon brands circle fa-youtube" target="_blank" rel="noopener noreferrer"><span class="label">YouTube</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; 2025 Luan Ta</li><li>Design: HTML5 UP</li>
+        </ul>
+    </footer>
 
-                <!-- First Level Content -->
-                <div id="tab1" class="tab-content active">
-                    <div class="content">
-                        <p>
-                            I led the level design for this month-long project. To ground my designs, my teammate and I quickly outlined the story: 
-                            a book-like creature exploring the human world. I focused on creating environments that feel isolated and forgotten, 
-                            drawing inspiration from office storage rooms to reflect the creature’s sense of curiosity and vulnerability.
-                        </p>
-                        <p> 
-                            This reference perfectly captures my vision.
-                        </p>
-                        <img src="assets/images/TLP/ref2TLP.png" alt="First Level Screenshot" class="image featured"/>
-                        <p>
-                            I sketched a linear layout to control pacing and introduce mechanics one at a time. By limiting the player to a single 
-                            path, I ensured a smooth and guided onboarding experience.
-                        </p>
-                        <div class="image-pair">
-                            <img src="assets/images/TLP/ref3TLP.png" alt="First Level Screenshot 2" />
-                            <img src="assets/images/TLP/ref4TLP.png" alt="First Level Screenshot 3" />
-                        </div>
+</div>
 
-                        <h3>Blockout</h3>
-                        <img src="assets/images/TLP/ref7TLP.png" alt="Blockout Example" class="image featured"/>
-                        <h3>Development Screenshots</h3>
-                        <div class="carousel">
-                            <img id="carousel-image" src="assets/images/TLP/ref8TLP.png" alt="Development Screenshot" />
-                            <div>
-                                <button onclick="prevImage()">Prev</button>
-                                <button onclick="nextImage()">Next</button>
-                            </div>
-                        </div>
-                        <p>
-                            These sketches show my initial room plans, each labeled and connected to its next space. Since the layout was fixed, I 
-                            quickly created simple blockouts to visualize the flow and maintain modularity for easy iteration. I also paced the level 
-                            intentionally, giving players time to experiment with each new mechanic before progressing.
-                        </p>
+<!-- Lightbox Overlay -->
+<div class="lightbox" id="lightbox">
+    <img id="lightbox-img" src="" alt="Full Size Preview">
+</div>
 
-                        <h3>Final Design</h3>
-                        <p>
-                            In the final design, I explored lighting and set dressing while experimenting with scale. Since the playable character is much 
-                            smaller than everyday objects, I emphasized that perspective to make the environment feel immersive and playful.
-                        </p>
-                        <img src="assets/images/TLP/ref24TLP.jpg" alt="Final Design Screenshot" class="image featured"/>
+<!-- Back to Top Button -->
+<button id="backToTop" title="Go to top">↑</button>
 
-                        <h3>Problem with this level</h3>
-                        <p>
-                            We couldn’t iterate as much as I hoped, and several rooms were cut due to time, scope, and miscommunication. This experience taught 
-                            me the importance of clear communication and realistic planning. By not accounting for our team’s bandwidth (especially with our 
-                            programmers as they were busy building the framework), we ended up discarding ideas that were out of scope. It was a valuable lesson 
-                            in aligning creativity with project limitations.
-                        </p>
-
-                    </div>
-                </div>
-
-                <!-- Second Level Content -->
-                <div id="tab2" class="tab-content">
-                    <div class="content">
-                        <p>
-                            The second level shifted to an open-world design with multiple paths. It was my first time approaching this style. Unlike the first 
-                            level, its larger scale introduced challenges with object placement and player perspective. To keep the space engaging without 
-                            overwhelming the player, I filled open areas with environmental props and limited enemy patrols on the ground. This level taught me 
-                            how to balance scale, exploration, and pacing in a more open environment.
-                        </p>
-                        <img src="assets/images/TLP/ref19TLP.png" alt="Second Level Screenshot" class="image featured"/>
-                        <p>
-                            The player’s objective in this level was to defeat the boss stationed by the printer. To reach it, they first had to disable a wall 
-                            switch located by one of the tables. The level’s flow is highlighted here, with the critical path shown in purple and the golden 
-                            path in magenta.
-                        </p>
-                        <div class="image-pair">
-                            <img src="assets/images/TLP/ref21TLP.png" alt="Second Level Screenshot 2"/>
-                            <img src="assets/images/TLP/ref20TLP.png" alt="Second Level Screenshot 3"/>
-                        </div>
-                        <h3>Blockout</h3>
-                        <img src="assets/images/TLP/ref17TLP.png" alt="Second Level Screenshot 4" class="image featured"/>
-                        <h3>Final Design</h3>
-                        <img src="assets/images/TLP/ref23TLP.jpg" alt="Second Level Screenshot 5" class="image featured"/>
-                        <h3>Problems with this level</h3>
-                        <p>
-                            The main issue with this level wasn’t scale, but direction. After spawning, players had no clear indication of what to do. While open 
-                            exploration was intentional, I missed opportunities to guide the player through environmental storytelling or explicit indicators like 
-                            signs, cutscenes, or waypoints. I also overlooked how our locked camera (constraint) limited the player’s ability to survey the environment. 
-                            This experience taught me the importance of balancing freedom with subtle guidance to keep players oriented.
-                        </p>
-                        <p>
-                            I also missed playtesting smaller sections to better understand the player’s spatial needs. Without testing each area, I overlooked that one 
-                            section became too cramped for combat, limiting player movement against multiple enemies. This taught me the value of iterative playtesting 
-                            to ensure balanced and enjoyable encounters. 
-                        </p>
-                    </div>
-                </div>
-                <!-- Gameplay -->
-                <div id="tab3" class="tab-content">
-                    <div class="content">
-                        <h3>Gameplay</h3>
-                        <p>Here’s a short gameplay demo of The Last Page. This video was uploaded by the Team Lead, Calcoa.</p>
-                        <!-- Responsive YouTube Embed -->
-                        <div class="video-container">
-                            <iframe width="560" height="315" 
-                                    src="https://www.youtube.com/embed/lBIubgOBNXA?si=WgEcOpK3QiUhJjVA" 
-                                    title="YouTube video player" frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                    referrerpolicy="strict-origin-when-cross-origin" 
-                                    allowfullscreen>
-                            </iframe>
-                        </div>
-                        <h3>Final Thoughts</h3>
-                        <p>
-                            Working on these two levels taught me a lot about level design and reinforced my passion for worldbuilding. Looking back, I see clear areas 
-                            for improvement, but I’m proud of what I achieved within such a short time. These projects reflect my growth, showing not only my successes 
-                            but also mistakes and remind me that learning is an ongoing journey. I’m excited to apply these lessons to future designs and continue honing 
-                            my craft.
-                        </p>
-                    </div> 
-                </div>
-            </section>
-        </article>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
-                <li><a href="#" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
-                <li><a href="#" class="icon brands circle fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="#" class="icon brands circle fa-youtube"><span class="label">YouTube</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; 2025 Luan Ta</li><li>Design: HTML5 UP</li>
-            </ul>
-        </footer>
-
-    </div>
-
-    <!-- Lightbox Overlay -->
-    <div class="lightbox" id="lightbox">
-        <img id="lightbox-img" src="" alt="Full Size Preview">
-    </div>
-
-    <!-- Back to Top Button -->
-    <button id="backToTop" title="Go to top">↑</button>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollgress.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/project1.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-
-    
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollgress.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/project1.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
